@@ -68,7 +68,7 @@ return _sharedFlashlight;
     {
         if (pressed) {
             if (_sharedFlashlight.flashlightLevel > 0) {
-                [_sharedFlashlight turnPowerOff];
+                [_sharedFlashlight setFlashlightLevel: 0.0 withError:nil]
             }
             else {
                 [_sharedFlashlight setFlashlightLevel:1.0 withError:nil];
